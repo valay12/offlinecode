@@ -10,4 +10,12 @@ interface_dict = {
 	"uplink": False
 }
 
+interface_dict1 = {
+	"name": "GigabitEthernet0/0",
+	"description": "Uplink port",
+	"vlan": 1,
+	"uplink": True
+}
+
 print(template.render(interface=interface_dict))
+print(template.render(interface=interface_dict1))
