@@ -1,0 +1,15 @@
+---
+
+interfaces:
+  - interface: Eth101/1
+    description: Server1
+    vlan: 12
+    uplink: False
+  - interface: Eth101/2
+    description: Server2
+    vlan: 13
+    uplink: False
+  - interface: Eth101/3
+    description: Server3
+    vlan: 25
+    uplink: False

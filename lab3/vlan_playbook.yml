@@ -1,0 +1,13 @@
+---
+
+  - name: GENERATE VLAN CONFIGURATION TEMPLATES
+    hosts: all
+    connection: local
+    gather_facts: no
+
+    tasks:
+
+      - name: GENERATE CONFIG
+        template:
+          src: "template.j2"
+          dest: "./configs/{{ inventory_hostname }}.cfg"
