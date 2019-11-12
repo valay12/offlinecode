@@ -1,0 +1,10 @@
+---
+
+snmp:
+  contact: Joe_Smith
+  location: NC
+  communities:
+    - community: public
+      type: ro
+    - community: private
+      type: rw

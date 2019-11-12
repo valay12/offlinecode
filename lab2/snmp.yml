@@ -1,0 +1,13 @@
+---
+
+ - name: PLAY 1 - GENERATE SNMP CONFIGURATION
+   hosts: leaf
+   connection: local
+   gather_facts: no
+
+   tasks:
+
+     - name: GENERATE CONFIGS
+       template:
+         src: "./snmp/ios.j2"
+         dest: "./configs/snmp/{{ inventory_hostname }}.cfg"
